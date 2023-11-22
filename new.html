@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tick cross</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Tic Tac Toe</h1>
+        <div class="refresh">
+            <span id="newgame" onclick="refresh()">New Game</span>
+            <span id="reset" onclick="refresh()">Reset</span>
+        </div>
+    </nav>
+    <section>
+        <input type="button" placeholder="Enter Player name" id="playername" value="Player1">
+        <div id="box">
+            <div id="d2">
+                <script>
+                    for (let i = 1; i <= 9; i++) {
+                        document.write(`<div id="b${i}" class="checkbox" onclick="game(display('b${i}'),result())"></div>`)
+                    }
+                </script>
+            </div>
+        </div>
+        <script src="new.js"></script>
+</body>
+
+</html>
